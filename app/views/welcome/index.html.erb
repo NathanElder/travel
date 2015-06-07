@@ -1,11 +1,21 @@
 <h1>Welcome to my Travel Site</h1>
+<div id="map-canvas"></div>
 <p>This is my awesome travel site!!!!!</p>
 Presenting:  <strong><%= @homeland %></strong>
+
 
 <ul>
   <% @countries.each do |country| %>
     <li><%= country %></li>
   <% end %>
+</ul>
+
+<!--
+<% @images.each do |pic| %>
+<%= image_tag pic, class: "img-responsive", length: "300" %>
+<% end %>
+-->
+
     <%= image_tag "britian.jpg", alt: "castle",
     id: "Bsomething castle",
 class: "Great Britian", height: '200' %>
@@ -21,10 +31,3 @@ class: "Portland", height: '200' %>
     <%= image_tag "guitar.jpg", alt: "steampunk",
 id: "Dude",
     class: "Guitar", height: '200' %>
-</ul>
-
-<% @images.each do |pic| %>
-<%= image_tag pic, class: "img-responsive", length: "300" %>
-
-
-<% end %>
